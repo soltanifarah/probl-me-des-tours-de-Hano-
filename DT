@@ -1,0 +1,14 @@
+description 
+The task is to solve a generalization of the classic Towers of Hanoi problem,
+with six pegs and n disks of different sizes. The objective is to move all the disks to the sixth peg, 
+while obeying the following rules: only one disk can be moved at a time, a disk can only be placed on a peg if it is 
+either empty or its top disk is larger than the one being moved, and the goal is to minimize the number of moves required.
+The problem is to be solved for n=6 to n=15, with several search techniques:
+
+Breadth-first search
+Depth-first and its biderctional search
+A* heuristic search,
+with a heuristic function h that combines the number of disks above each disk on pegs 1-5, 
+the number of disks not immediately above the current disk on each peg, and the number of disks above each misplaced disk on the sixth peg.
+The heuristic function is defined as h = a + 3b + c, where a, b, and c are the measures described above. 
+All techniques should be implemented using bidirectional search.
